@@ -30,9 +30,9 @@
 
 	<div id="fullpage">
 		<!-- Section -->
-		<div class="section" id="section1">
+		<div class="section text-center" id="section1">
 
-			<div>
+			<div class="container">
 				<h1 class="display-1">Save the day!</h1>
 				<p>2021.11.06</p>
 				<p>v2.0</p>
@@ -42,23 +42,10 @@
 
 		<!-- Section -->
 		<div class="section" id="section2">
-			TEST
 			<div class="container">
-				<div class="row text-center">
-					<div class="col-2"></div>
-					<div class="col-8">
-						<h1 class="display-1">Message</h1>
-						<p class="display-2" id="timer"></p>
-					</div>
-					<div class="col-2"></div>
-				</div>
-
-				<div class="row text-center">
-					<div class="col-2"></div>
-					<div class="col-8">
-						<p class="display-2" id="timerms"></p>
-					</div>
-					<div class="col-2"></div>
+				<div class="row mb-5">
+					<div class="col-7 text-end"><p class="display-3" id="timer"></p></div>
+					<div class="col-5"><p class="display-3" id="timerms"></p></div>
 				</div>
 			</div>
 
@@ -66,44 +53,18 @@
 
 		<!-- Section -->
 		<div class="section" id="section3">
-			<div>
-				<div class="container">
-					<div class="row align-items-start">
-						<div class="col">
-							One of three columns
-						</div>
-						<div class="col">
-							One of three columns
-						</div>
-						<div class="col">
-							One of three columns
-						</div>
-					</div>
-
-					<div class="row align-items-center">
-					  <div class="col">
-						One of three columns
-					  </div>
-					  <div class="col">
-						One of three columns
-					  </div>
-					  <div class="col">
-						One of three columns
-					  </div>
-					</div>
-
-					<div class="row align-items-end">
-					  <div class="col">
-						One of three columns
-					  </div>
-					  <div class="col">
-						One of three columns
-					  </div>
-					  <div class="col">
-						One of three columns
-					  </div>
-					</div>
+			<div class="container">
+				<div class="row">
+				  <div class="col">
+					Column
 				  </div>
+				  <div class="col">
+					Column
+				  </div>
+				  <div class="col">
+					Column
+				  </div>
+				</div>
 			</div>
 		</div>
 
@@ -134,6 +95,7 @@
 			navigation: true,
 			responsiveHeight: 330,
 			menu: '#menu',
+			verticalCentered: false,
 			responsiveWidth: 900,
 			afterResponsive: function(isResponsive){
 

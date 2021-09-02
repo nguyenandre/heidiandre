@@ -75,9 +75,6 @@ header a:hover{
 }
 
 /* Sections */
-.section h1 {
-	font-weight: 200;
-}
 
 /* Backgrounds */
 /* Defining each sectino background and styles */
@@ -87,23 +84,26 @@ header a:hover{
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+	display: flex;
+	align-items: center;
 }
 
 #section1 h1,
 #section1 p {
-	text-align: center;
 	text-shadow: 1px 1px 4px #3A3B3C;
 	color: white;
 }
 
 #section2 {
 	background-image: url('../img/bg2.jpg');
-	background-position: 47% 65%;
+	background-position: 50% 65%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	color: white;
 	text-shadow: 1px 1px 4px #3A3B3C;
+	display: flex;
+	align-items: center;
 }
 
 #section2 p {
@@ -113,6 +113,11 @@ header a:hover{
 
 #section3 {
 	background-color: greenyellow;
+}
+
+#section4 {
+	display: flex;
+	align-items: center;
 }
 
 #section4 p {
