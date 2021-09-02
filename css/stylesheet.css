@@ -49,7 +49,6 @@ a {
 /* Backgrounds */
 /* Defining each sectino background and styles */
 #section1 {
-	height: 100vh;
 	background-image: url('../img/bg1.jpg');
 	background-position: 70% 80%;
 	background-repeat: no-repeat;
@@ -61,7 +60,6 @@ a {
 	text-align: center;
 	color: white;
 }
-
 
 #section2 {
 	background-color: red;
