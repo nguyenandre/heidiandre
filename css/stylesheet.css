@@ -1,0 +1,88 @@
+/* Reset CSS */
+body {
+    padding: 0;
+    margin: 0;
+}
+a {
+	text-decoration:none;
+}
+
+/* Custom CSS */
+/* Menu */
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+}
+#menu li.active{
+	text-decoration: underline;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	text-decoration: underline;
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	text-decoration: underline;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+/* Backgrounds */
+/* Backgrounds will cover all the section */
+#section1,
+#section2,
+#section3,
+#section4,
+#slide1,
+#slide2 {
+	background-size: cover;
+	background-attachment: fixed;
+}
+	
+/* Defining each sectino background and styles */
+#section1 {
+	background-image: url('../img/bg1.jpg');
+	background-position: 70% 80%;
+	text-align: center;
+}
+
+#section1 h1, p {
+	color: white;
+}
+
+
+#section2 {
+	background-color: red;
+}
+
+#section3 {
+	background-color: greenyellow;
+}
+
+/*Adding background for the slides */
+#slide1 {
+	background-color: blue;
+}
+
+#slide2 {
+	background-color: black;
+}
