@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap');
 
+
 /* Reset CSS */
 body {
     padding: 0;
     margin: 0;
 	font-family: 'Mukta', sans-serif;
-	border: 65px solid white;
+	border: 4rem solid white;
 }
 a {
 	text-decoration:none;
@@ -88,4 +89,10 @@ a {
 
 #slide2 {
 	background-color: black;
+}
+
+@media (max-width: 900px) {
+	body {
+		border: 1rem solid white;
+	}
 }
