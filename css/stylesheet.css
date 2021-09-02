@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;500&display=swap');
 /* Reset CSS */
 body {
     padding: 0;
@@ -9,14 +8,14 @@ body {
 }
 
 a {
-	text-decoration:none;
+	text-decoration: none;
 }
 
 /* Custom CSS */
 /* Header */
 header {
 	position:fixed;
-	top:1.5rem;
+	top:0;
 	left:0;
 	z-index: 70;
 	width: 100%;
@@ -24,11 +23,17 @@ header {
 	margin:0;
 }
 
-header h1{
+header h1 {
 	text-align: center;
 	font-size: 1rem;
+	padding: 1.5rem;
 }
 
+header a,
+header a:hover{
+	text-decoration:none;
+	color: #000;
+}
 /* Menu */
 #menu{
 	position:fixed;
@@ -70,38 +75,52 @@ header h1{
 }
 
 /* Sections */
-
+.section h1 {
+	font-weight: 200;
+	font-size: 4rem;
+}
 
 /* Backgrounds */
 /* Defining each sectino background and styles */
 #section1 {
 	background-image: url('../img/bg1.jpg');
-	background-position: 70% 80%;
+	background-position: 70% 90%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 }
 
-#section1 h1, p {
+#section1 h1,
+#section1 p {
 	text-align: center;
+	text-shadow: 1px 1px 4px #3A3B3C;
 	color: white;
 }
 
 #section2 {
-	background-color: red;
+	background-image: url('../img/bg2.jpg');
+	background-position: 47% 65%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: white;
+	text-shadow: 1px 1px 4px #3A3B3C;
+}
+
+#section2 p {
+	display: inline;
+	font-weight: 200;
+	font-size: 4rem;
 }
 
 #section3 {
 	background-color: greenyellow;
 }
 
-/*Adding background for the slides */
-#slide1 {
-	background-color: blue;
-}
-
-#slide2 {
-	background-color: black;
+#section4 p {
+	font-weight: 300;
+	font-size: 1.2rem;
+	line-height: 2rem;
 }
 
 @media (max-width: 900px) { 
