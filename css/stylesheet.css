@@ -60,12 +60,16 @@ a {
 	
 /* Defining each sectino background and styles */
 #section1 {
+	height: 100vh;
 	background-image: url('../img/bg1.jpg');
 	background-position: 70% 80%;
-	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
 
 #section1 h1, p {
+	text-align: center;
 	color: white;
 }
 
