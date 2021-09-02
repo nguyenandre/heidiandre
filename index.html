@@ -28,7 +28,7 @@
 			<div class="intro">
 				<h1>Save the day!</h1>
 				<p>2021.11.06</p>
-				<p>v1.4</p>
+				<p>v1.5</p>
 			</div>
 		</div>
 
@@ -64,14 +64,21 @@
     <!-- JavaScript -->
 	<script type="text/javascript" src="./js/fullpage.min.js"></script>
 	<script type="text/javascript">
-		var myFullpage = new fullpage('#fullpage', {
+		new fullpage('#fullpage', {
 			anchors: ['1', '2', '3', '4'],
-			menu: '#menu',
-			navigation: true,
-			navigationPosition: 'right',
 			navigationTooltips: ['Top', 'Message', 'Events', 'RVSP'],
+			css3: true,
+			scrollingSpeed: 1000,
+			navigation: true,
+			responsiveHeight: 330,
+			menu: '#menu',
+			responsiveWidth: 900,
+			afterResponsive: function(isResponsive){
+
+			}
 		});
 	</script>
+
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
