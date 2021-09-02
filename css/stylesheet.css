@@ -77,7 +77,6 @@ header a:hover{
 /* Sections */
 .section h1 {
 	font-weight: 200;
-	font-size: 4rem;
 }
 
 /* Backgrounds */
@@ -110,7 +109,6 @@ header a:hover{
 #section2 p {
 	display: inline;
 	font-weight: 200;
-	font-size: 4rem;
 }
 
 #section3 {
@@ -119,8 +117,6 @@ header a:hover{
 
 #section4 p {
 	font-weight: 300;
-	font-size: 1.2rem;
-	line-height: 2rem;
 }
 
 @media (max-width: 900px) { 
