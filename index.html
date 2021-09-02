@@ -26,7 +26,7 @@
           	</button>
 
         	<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
+				<ul class="navbar-nav" id="menu">
 					<li data-menuanchor="1" class="nav-item"><a class="nav-link" href="#1">Top</a></li>
 					<li data-menuanchor="2" class="nav-item"><a class="nav-link" href="#2">Message</a></li>
 					<li data-menuanchor="3" class="nav-item"><a class="nav-link" href="#3">Events</a></li>
@@ -45,7 +45,7 @@
 			<div class="container">
 				<h1 class="display-1">Save the date!</h1>
 				<p>2021.11.06</p>
-				<p>v2.2</p>
+				<p>v2.3</p>
 			</div>
 		</div>
 
@@ -86,11 +86,60 @@
 		<!-- Section Events -->
 		<div class="section" id="section3">
 			<div class="container">
-				<h1 class="display-1">Save the date!</h1>
-				<p>2021.11.06</p>
-				<p>v2.0</p>
+
+
+				<div class="row pt-5 text-center">
+					<div class="col"></div>
+					<div class="col"><h1 class="display-1 pt-5">Events</h1></div>
+					<div class="col"></div>
+				</div>
+
+				<div class="row pt-5 text-center">
+					<div class="col-lg"><h2 class="display-7">Wedding Ceremony</h2></div>
+					<div class="col-lg">
+						<address>
+							<strong>Hong Kong Catholic Cathedral of the Immaculate Conception</strong><br>
+							16 Caine Road<br>
+							Mid Levels<br>
+							<abbr title="Phone">tel:</abbr> 2522 8212
+						</address>
+					</div>
+					<div class="col-lg">
+						<iframe 
+							width="100%" 
+							height="400" 
+							style="border:0" 
+							loading="lazy" 
+							src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJb_wNk3oABDQRRLd78iZ77nM&key=AIzaSyDQqau12MlrLJILsQMo0dR7uPiYSDiPBlc">
+						</iframe>
+					</div>
+				</div>
+
+				<div class="row pt-5 text-center">
+					<div class="col-lg"><h2 class="display-7">Banquet</h2></div>
+					<div class="col-lg">
+						<address>
+							<strong>The Hilltop in the Valley</strong><br>
+							2/F HK Jockey Clubhouse<br>
+							25 Shan Kwong Road<br>
+							Happy Valley<br>
+							<abbr title="Phone">tel:</abbr> 2966 1333
+						</address>
+					</div>
+					<div class="col-lg">
+						<iframe 
+							width="100%" 
+							height="400" 
+							style="border:0" 
+							oading="lazy" 
+							src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJt7cLwUsABDQRl64HvXfZTes&key=AIzaSyDQqau12MlrLJILsQMo0dR7uPiYSDiPBlc">
+						</iframe>
+					</div>
+				</div>
+
 			</div>
 		</div>
+
 
 		<!-- Section RVSP -->
 		<div class="section text-center" id="section4">
@@ -124,7 +173,9 @@
 	</div>
 
     <!-- JavaScript -->
+	<script type="text/javascript" src="./js/script.js"></script>
 	<script type="text/javascript" src="./js/fullpage.min.js"></script>
+
 	<script type="text/javascript">
 		new fullpage('#fullpage', {
 			anchors: ['1', '2', '3', '4'],
@@ -134,46 +185,13 @@
 			responsiveHeight: 330,
 			menu: '#menu',
 			verticalCentered: false,
-			responsiveWidth: 900,
+			responsiveWidth: 992,
 			afterResponsive: function(isResponsive){
 
 			}
 		});
 	</script>
-
-
-	<script>
-	// Set the date we're counting down to
-	let countDownDate = new Date("Nov 6, 2021 00:00:00").getTime();
-
-	// Update the count down every 1 second
-	let x = setInterval(function() {
-
-		// Get today's date and time
-		let now = new Date().getTime();
-
-		// Find the distance between now and the count down date
-		let distance = countDownDate - now;
-
-		// Time calculations for days, hours, minutes and seconds
-		let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-		let milliseconds = Math.floor(distance % 1000);
-
-		// Display the result in the element with id="demo"
-		document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-		+ minutes + "m " + seconds + "s " + milliseconds + "ms";
-
-		// If the count down is finished, write some text
-		if (distance < 0) {
-			clearInterval(x);
-			document.getElementById("timer").innerHTML = "Wedding Day";
-		}
-	});
-	</script>
-
+	
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   </body>
