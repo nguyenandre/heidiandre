@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
 /* Reset CSS */
 body {
     padding: 0;
@@ -12,6 +14,24 @@ a {
 }
 
 /* Custom CSS */
+.navbar-toggler {
+    border: 0;
+	padding: 20px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-collapse {
+	text-align: center;
+}
+
+
 /* Header */
 header {
 	position:fixed;
@@ -35,6 +55,7 @@ header a:hover{
 	color: #000;
 }
 /* Menu */
+/*
 #menu{
 	position:fixed;
 	top: 4rem;
@@ -73,6 +94,7 @@ header a:hover{
 	color: #000000;
 	text-decoration: underline;
 }
+*/
 
 /* Sections */
 
@@ -90,7 +112,7 @@ header a:hover{
 
 #section1 h1,
 #section1 p {
-	text-shadow: 1px 1px 4px #3A3B3C;
+	text-shadow: 1px 1px 3px #3A3B3C;
 	color: white;
 }
 
@@ -101,14 +123,16 @@ header a:hover{
 	background-size: cover;
 	position: relative;
 	color: white;
-	text-shadow: 1px 1px 4px #3A3B3C;
-	display: flex;
-	align-items: center;
+	text-shadow: 2px 2px 3px #3A3B3C;
 }
 
 #section2 p {
-	display: inline;
 	font-weight: 200;
+	line-height: 2.5rem;
+}
+
+.signature {
+	font-family: 'Allison', cursive;
 }
 
 #section3 {
@@ -122,6 +146,7 @@ header a:hover{
 
 #section4 p {
 	font-weight: 300;
+	line-height: 2.5rem;
 }
 
 @media (max-width: 900px) { 

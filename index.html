@@ -12,51 +12,78 @@
   </head>
   <body>
 	
+
 	<header>
-		<h1><a href="#1">Heidi + Andre</a></h1>
+		<h1>Heidi + Andre</h1>
 	</header>
-	
+
 	<!-- Menu -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container-fluid d-flex justify-content-end">
 
+        	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        		<span class="navbar-toggler-icon"></span>
+          	</button>
 
+        	<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li data-menuanchor="1" class="nav-item"><a class="nav-link" href="#1">Top</a></li>
+					<li data-menuanchor="2" class="nav-item"><a class="nav-link" href="#2">Message</a></li>
+					<li data-menuanchor="3" class="nav-item"><a class="nav-link" href="#3">Events</a></li>
+					<li data-menuanchor="4" class="nav-item"><a class="nav-link" href="#4">RVSP</a></li>
+				</ul>
+          	</div>
+        </div>
+      </nav>
 
-	<ul id="menu">
-		<li data-menuanchor="1"><a href="#1">Top</a></li>
-		<li data-menuanchor="2"><a href="#2">Message</a></li>
-		<li data-menuanchor="3"><a href="#3">Events</a></li>
-		<li data-menuanchor="4"><a href="#4">RVSP</a></li>
-	</ul>
 
 	<!-- Body -->
-
-
 	<div id="fullpage">
-		<!-- Section -->
+
+		<!-- Section Top -->
 		<div class="section text-center" id="section1">
 			<div class="container">
 				<h1 class="display-1">Save the date!</h1>
 				<p>2021.11.06</p>
-				<p>v2.1</p>
+				<p>v2.2</p>
 			</div>
 		</div>
 
-		<!-- Section -->
+		<!-- Section Message -->
 		<div class="section" id="section2">
-			<div class="container text-center">
-				<div class="row">
+			<div class="container">
+
+				<div class="row pt-5">
 					<div class="col"></div>
-					<div class="col">
-						<h1 class="display-1 p-5">Message</h1>
+					<div class="col"><h1 class="display-1 pt-5">Message</h1></div>
+					<div class="col"></div>
+				</div>
+
+				<div class="row pt-5">
+					<div class="col"></div>
+					<div class="col-8">
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-						<p class="display-3" id="timer"></p>
-						<p class="display-3" id="timerms"></p>
 					</div>
 					<div class="col"></div>
 				</div>
+
+				<div class="row pt-5">
+					<div class="col"></div>
+					<div class="col-10"><h3 class="display-4 signature">Heidi and Andre</h3></div>
+					<div class="col"></div>
+				</div>
+
+				<div class="row pt-5">
+					<div class="col"></div>
+					<div class="col text-center"><h2 class="display-4" id="timer"></h2></div>
+					<div class="col"></div>
+				</div>
+
 			</div>
+
 		</div>
 
-		<!-- Section -->
+		<!-- Section Events -->
 		<div class="section" id="section3">
 			<div class="container">
 				<h1 class="display-1">Save the date!</h1>
@@ -65,14 +92,27 @@
 			</div>
 		</div>
 
-		<!-- Section -->
+		<!-- Section RVSP -->
 		<div class="section text-center" id="section4">
 			<div class="container">
+
+				<div class="row">
+					<div class="col"></div>
+					<div class="col"><h1 class="display-1">RVSP</h1></div>
+					<div class="col"></div>
+				</div>
+
+				<div class="row pt-5">
+					<div class="col"></div>
+					<div class="col-8">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</div>
+					<div class="col"></div>
+				</div>
+
 				<div class="row">
 					<div class="col"></div>
 					<div class="col">
-						<h1 class="display-1 p-5">RVSP</h1>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 						<div class="p-5">
 							<button type="button" class="btn btn-light btn-lg"><a href="https://forms.gle/fjjiJ776qWy7c6Vz7" target="_blank">RVSP</a></button>
 						</div>
@@ -124,9 +164,7 @@
 
 		// Display the result in the element with id="demo"
 		document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-		+ minutes + "m " + seconds + "s ";
-
-		document.getElementById("timerms").innerHTML = milliseconds + "ms ";
+		+ minutes + "m " + seconds + "s " + milliseconds + "ms";
 
 		// If the count down is finished, write some text
 		if (distance < 0) {
