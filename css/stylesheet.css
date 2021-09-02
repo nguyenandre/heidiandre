@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap');
+
 /* Reset CSS */
 body {
     padding: 0;
     margin: 0;
+	font-family: 'Mukta', sans-serif;
+	border: 65px solid white;
 }
 a {
 	text-decoration:none;
@@ -9,32 +13,6 @@ a {
 
 /* Custom CSS */
 /* Menu */
-#menu li {
-	display:inline-block;
-	margin: 10px;
-	color: #000;
-}
-#menu li.active{
-	text-decoration: underline;
-}
-#menu li a{
-	text-decoration:none;
-	color: #000;
-}
-#menu li.active a:hover{
-	color: #000;
-}
-#menu li:hover{
-	text-decoration: underline;
-}
-#menu li a,
-#menu li.active a{
-	padding: 9px 18px;
-	display:block;
-}
-#menu li.active a{
-	text-decoration: underline;
-}
 #menu{
 	position:fixed;
 	top:0;
@@ -46,9 +24,43 @@ a {
 	margin:0;
 }
 
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+}
+
+#menu li.active{
+	text-decoration: underline;
+}
+
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+
+#menu li.active a:hover{
+	color: #000;
+}
+
+#menu li:hover{
+	text-decoration: underline;
+}
+
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+
+#menu li.active a{
+	text-decoration: underline;
+}
+
 /* Backgrounds */
 /* Defining each sectino background and styles */
 #section1 {
+	border: 10px white;
 	background-image: url('../img/bg1.jpg');
 	background-position: 70% 80%;
 	background-repeat: no-repeat;
