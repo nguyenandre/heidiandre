@@ -61,20 +61,20 @@
 				<div class="row pt-5">
 					<div class="col"></div>
 					<div class="col-8">
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it</p>
 					</div>
 					<div class="col"></div>
 				</div>
 
-				<div class="row pt-5">
+				<div class="row pt-3">
 					<div class="col"></div>
-					<div class="col-10"><h3 class="display-4 signature">Heidi and Andre</h3></div>
+					<div class="col-10"><h3 class="display-5 signature">Heidi and Andre</h3></div>
 					<div class="col"></div>
 				</div>
 
 				<div class="row pt-5">
 					<div class="col"></div>
-					<div class="col text-center"><h2 class="display-4" id="timer"></h2></div>
+					<div class="col text-center"><h2 class="display-6" id="timer"></h2></div>
 					<div class="col"></div>
 				</div>
 
@@ -85,54 +85,61 @@
 		<!-- Section Events -->
 		<div class="section" id="section3">
 			<div class="container">
-
-
 				<div class="row pt-5 text-center">
 					<div class="col"></div>
 					<div class="col"><h1 class="display-1 pt-5">Events</h1></div>
 					<div class="col"></div>
 				</div>
 
-				<div class="row pt-5 text-center">
-					<div class="col-lg"><h2 class="display-7">Wedding Ceremony</h2></div>
-					<div class="col-lg">
-						<address>
-							<strong>Hong Kong Catholic Cathedral of the Immaculate Conception</strong><br>
-							16 Caine Road<br>
-							Mid Levels<br>
-							<abbr title="Phone">tel:</abbr> 2522 8212
-						</address>
-					</div>
-					<div class="col-lg">
-						<iframe 
-							width="100%" 
-							height="400" 
-							style="border:0" 
-							loading="lazy" 
-							src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJb_wNk3oABDQRRLd78iZ77nM&key=AIzaSyDQqau12MlrLJILsQMo0dR7uPiYSDiPBlc">
-						</iframe>
-					</div>
-				</div>
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Wedding Ceremony</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Banquet</button>
+					</li>
+				</ul>
 
-				<div class="row pt-5 text-center">
-					<div class="col-lg"><h2 class="display-7">Banquet</h2></div>
-					<div class="col-lg">
-						<address>
-							<strong>The Hilltop in the Valley</strong><br>
-							2/F HK Jockey Clubhouse<br>
-							25 Shan Kwong Road<br>
-							Happy Valley<br>
-							<abbr title="Phone">tel:</abbr> 2966 1333
-						</address>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<div class="col-lg">
+							<address>
+								<strong>Hong Kong Catholic Cathedral of the Immaculate Conception</strong><br>
+								16 Caine Road<br>
+								Mid Levels<br>
+								<abbr title="Phone">tel:</abbr> 2522 8212
+							</address>
+						</div>
+						<div class="col-lg">
+							<iframe 
+								width="100%" 
+								height="400" 
+								style="border:0" 
+								loading="lazy" 
+								src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJb_wNk3oABDQRRLd78iZ77nM&key=AIzaSyDQqau12MlrLJILsQMo0dR7uPiYSDiPBlc">
+							</iframe>
+						</div>
 					</div>
-					<div class="col-lg">
-						<iframe 
-							width="100%" 
-							height="400" 
-							style="border:0" 
-							oading="lazy" 
-							src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJt7cLwUsABDQRl64HvXfZTes&key=AIzaSyDQqau12MlrLJILsQMo0dR7uPiYSDiPBlc">
-						</iframe>
+
+					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="col-lg">
+							<address>
+								<strong>The Hilltop in the Valley</strong><br>
+								2/F HK Jockey Clubhouse<br>
+								25 Shan Kwong Road<br>
+								Happy Valley<br>
+								<abbr title="Phone">tel:</abbr> 2966 1333
+							</address>
+						</div>
+						<div class="col-lg">
+							<iframe 
+								width="100%" 
+								height="400" 
+								style="border:0" 
+								oading="lazy" 
+								src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJt7cLwUsABDQRl64HvXfZTes&key=AIzaSyDQqau12MlrLJILsQMo0dR7uPiYSDiPBlc">
+							</iframe>
+						</div>
 					</div>
 				</div>
 
@@ -144,16 +151,17 @@
 		<div class="section text-center" id="section4">
 			<div class="container">
 
+
 				<div class="row">
 					<div class="col"></div>
-					<div class="col"><h1 class="display-1">RVSP</h1></div>
+					<div class="col pt-5"><h1 class="display-1">RVSP</h1></div>
 					<div class="col"></div>
 				</div>
 
 				<div class="row pt-5">
 					<div class="col"></div>
 					<div class="col-8">
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy tex</p>
 					</div>
 					<div class="col"></div>
 				</div>

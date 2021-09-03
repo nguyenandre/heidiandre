@@ -126,11 +126,14 @@ header a:hover{
 
 #section2 p {
 	font-weight: 200;
-	line-height: 2.3rem;
 }
 
 .signature {
 	font-family: 'Allison', cursive;
+}
+
+#section3{
+	height: 800px;
 }
 
 #section3 h1, h2, h3{
@@ -138,6 +141,13 @@ header a:hover{
 }
 
 #section4 {
+	background-image: url('../img/bg4.jpg');
+	background-position: 45% 90%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: white;
+	text-shadow: 2px 2px 3px #3A3B3C;
 	display: flex;
 	align-items: center;
 }
@@ -148,7 +158,6 @@ header a:hover{
 
 #section4 p {
 	font-weight: 300;
-	line-height: 2.3rem;
 }
 
 @media (max-width: 992px) { 
