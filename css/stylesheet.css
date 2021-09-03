@@ -50,9 +50,10 @@ abbr, acronym {
 /* Header */
 header {
 	position:fixed;
-	z-index: 100;
-	text-align: center;
-	top: 0;
+	z-index:100;
+	text-align:center;
+	top:0;
+	left:0
 }
 
 header h1 {
@@ -183,6 +184,27 @@ header a, a:active, a:hover {
 		right: 6rem;
 		z-index: 70;
 		background-color: transparent;
+	}
+
+	#section2,
+	#section4{
+		padding-top: 2rem;
+	}
+
+	#section2 p,
+	#section4 p {
+		padding-top: 3rem;
+		font-size: 1.8rem;
+		line-height: 3.5rem;
+	}
+
+	#section2 .signature {
+		font-size: 5rem;
+	}
+
+	#section2 #timer {
+		font-size: 3.5rem;
+		line-height: 5rem;
 	}
 
 }
