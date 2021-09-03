@@ -62,8 +62,8 @@
 		<!-- Section Top -->
 		<div class="section text-center" id="section1">
 			<div class="container">
-				<h1 class="display-3">Save the date!</h1>
-				<p class="display-6">21.11.06</p>
+				<h1 class="display-1">Save the date!</h1>
+				<p class="display-5">21.11.06</p>
 			</div>
 		</div>
 
@@ -73,7 +73,7 @@
 
 				<div class="row pt-5 mx-auto">
 					<div class="col"></div>
-					<div class="col"><h1 class="display-3 pt-3 text-center">Message</h1></div>
+					<div class="col"><h1 class="display-1 pt-3 text-center">Message</h1></div>
 					<div class="col"></div>
 				</div>
 
@@ -87,15 +87,15 @@
 
 				<div class="row pt-3">
 					<div class="col"></div>
-					<div class="col-10"><p class="display-5 signature">Heidi and André</p></div>
+					<div class="col-10"><strong class="text-center signature">Heidi and André</strong></div>
 					<div class="col"></div>
 				</div>
 
-				<div class="row pt-5">
+				<div class="row pt-3">
 					<div class="col"></div>
 					<div class="col text-center">
-						<p>Wedding Countdown</p>
-						<p class="display-6" id="timer"></p>
+						<strong class="pt-1">Wedding Countdown</strong>
+						<div id="timer"></div>
 					</div>
 					<div class="col"></div>
 				</div>
@@ -113,40 +113,82 @@
 					<div class="col"></div>
 				</div>
 
-				<ul class="nav nav-tabs justify-content-center pt-3" id="myTab" role="tablist">
-					<li class="nav-items" role="presentation">
-						<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Ceremony</button>
-					</li>
-					<li class="nav-items" role="presentation">
-						<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Banquet</button>
-					</li>
-				</ul>
+				<!-- Mobile Version -->
+				<div class="mobiletab">
+					<ul class="nav nav-tabs justify-content-center pt-3" id="myTab" role="tablist">
+						<li class="nav-items" role="presentation">
+							<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Ceremony</button>
+						</li>
+						<li class="nav-items" role="presentation">
+							<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Banquet</button>
+						</li>
+					</ul>
 
-				<div class="tab-content" id="myTabContent">
-					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-						<div class="col-lg text-center pt-3">6 Nov 2021 (Saturday)<br>11:00-13:00</div>
-						<div class="col-lg text-center pt-3">
-							<address>
-								<strong>Hong Kong Catholic Cathedral of the Immaculate Conception</strong><br>
-								16 Caine Road<br>
-								Mid Levels<br>
-								<abbr title="Phone">tel:</abbr> 2522 8212
-							</address>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+							<div class="col-lg text-center pt-3">6 Nov 2021 (Saturday)<br>11:00-13:00</div>
+							<div class="col-lg text-center pt-3">
+								<address>
+									<strong>Hong Kong Catholic Cathedral of the Immaculate Conception</strong><br>
+									16 Caine Road<br>
+									Mid Levels<br>
+									<abbr title="Phone">tel:</abbr> 2522 8212
+								</address>
+							</div>
+							<div class="col-lg">
+								<iframe 
+									width="100%" 
+									height="280" 
+									style="border:0" 
+									loading="lazy" 
+									src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJb_wNk3oABDQRRLd78iZ77nM&key=AIzaSyDQqau12MlrLJILsQMo0dR7uPiYSDiPBlc">
+								</iframe>
+							</div>
 						</div>
-						<div class="col-lg">
-							<iframe 
-								width="100%" 
-								height="280" 
-								style="border:0" 
-								loading="lazy" 
-								src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJb_wNk3oABDQRRLd78iZ77nM&key=AIzaSyDQqau12MlrLJILsQMo0dR7uPiYSDiPBlc">
-							</iframe>
+
+						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+							<div class="col-lg text-center pt-3">6 Nov 2021 (Saturday)<br>Reception 17:00, Dinner 19:30</div>
+							<div class="col-lg text-center pt-3">
+								<address>
+									<strong>The Hilltop in the Valley</strong><br>
+									2/F HK Jockey Clubhouse<br>
+									25 Shan Kwong Road<br>
+									Happy Valley<br>
+									<abbr title="Phone">tel:</abbr> 2966 1333
+								</address>
+							</div>
+							<div class="col-lg">
+								<iframe 
+									width="100%" 
+									height="280" 
+									style="border:0" 
+									loading="lazy" 
+									src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJt7cLwUsABDQRl64HvXfZTes&key=AIzaSyDQqau12MlrLJILsQMo0dR7uPiYSDiPBlc">
+								</iframe>
+							</div>
 						</div>
 					</div>
+				</div>
 
-					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-						<div class="col-lg text-center pt-3">6 Nov 2021 (Saturday)<br>Reception 17:00, Dinner 19:30</div>
-						<div class="col-lg text-center pt-3">
+				<!-- Desktop Version -->
+				<div class="desktop">
+					<div class="row pt-5 text-center">
+						<div class="col"><h2>Ceremony</h2></div>
+						<div class="col-1"></div>
+						<div class="col"><h2>Banquet</h2></div>
+					</div>
+					<div class="row pt-5 text-center">
+						<div class="col">
+							<address>
+								<address>
+									<strong>Hong Kong Catholic Cathedral of the Immaculate Conception</strong><br>
+									16 Caine Road<br>
+									Mid Levels<br>
+									<abbr title="Phone">tel:</abbr> 2522 8212
+								</address>
+						</div>
+						<div class="col-1"></div>
+						<div class="col">
 							<address>
 								<strong>The Hilltop in the Valley</strong><br>
 								2/F HK Jockey Clubhouse<br>
@@ -155,17 +197,30 @@
 								<abbr title="Phone">tel:</abbr> 2966 1333
 							</address>
 						</div>
-						<div class="col-lg">
+					</div>
+					<div class="row pt-5 text-center">
+						<div class="col">
 							<iframe 
 								width="100%" 
-								height="280" 
+								height="400" 
 								style="border:0" 
-								oading="lazy" 
+								loading="lazy" 
+								src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJb_wNk3oABDQRRLd78iZ77nM&key=AIzaSyDQqau12MlrLJILsQMo0dR7uPiYSDiPBlc">
+							</iframe>
+						</div>
+						<div class="col-1"></div>
+						<div class="col">
+							<iframe 
+								width="100%" 
+								height="400" 
+								style="border:0" 
+								loading="lazy" 
 								src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJt7cLwUsABDQRl64HvXfZTes&key=AIzaSyDQqau12MlrLJILsQMo0dR7uPiYSDiPBlc">
 							</iframe>
 						</div>
 					</div>
 				</div>
+
 
 			</div>
 		</div>
@@ -174,15 +229,13 @@
 		<!-- Section RVSP -->
 		<div class="section text-center" id="section4">
 			<div class="container">
-
-
 				<div class="row">
 					<div class="col"></div>
 					<div class="col pt-5"><h1 class="display-1">RVSP</h1></div>
 					<div class="col"></div>
 				</div>
 
-				<div class="row pt-5">
+				<div class="row">
 					<div class="col"></div>
 					<div class="col-8">
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy tex</p>
