@@ -94,17 +94,19 @@ header a, a:active, a:hover {
 #menu li {
 	display: inline-block;
 	margin: 0.8rem;
+	
 }
 
 #menu li.active,
 #menu li:hover,
 #menu li.active a {
 	text-decoration:underline;
+	
 }
 
 #menu li a {
-	text-decoration:none;
 	color:#5A5A5A;
+	text-decoration:none;
 }
 
 #menu li a,
