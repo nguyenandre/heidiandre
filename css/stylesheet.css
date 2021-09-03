@@ -125,7 +125,8 @@ header a, a:active, a:hover {
 }
 
 .section h1, p {
-	text-shadow: 1px 1px 3px #3A3B3C;
+	font-weight: 200;
+	text-shadow: 1px 1px 2px #3A3B3C;
 }
 
 /* Backgrounds */
@@ -140,7 +141,6 @@ header a, a:active, a:hover {
 #section1 h1,
 #section1 p {
 	color: white;
-	font-weight: 200;
 }
 
 #section2 {
@@ -148,10 +148,6 @@ header a, a:active, a:hover {
 	background-position: 50% 85%;
 	color: white;
 	min-height: 600px;
-}
-
-#section2 p {
-	font-weight: 200;
 }
 
 .signature {
@@ -162,8 +158,9 @@ header a, a:active, a:hover {
 	min-height: 800px;
 }
 
-#section3 h1, h2, h3{
-	font-weight: 200;
+#section3 h1,
+#section3 p {
+	text-shadow: none;
 }
 
 #section4 {
@@ -173,14 +170,6 @@ header a, a:active, a:hover {
 	min-height: 600px;
 	display: flex;
 	align-items: center;
-}
-
-#section4 h1{
-	font-weight: 200;
-}
-
-#section4 p {
-	font-weight: 300;
 }
 
 @media (min-width: 992px) { 
