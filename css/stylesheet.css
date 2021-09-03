@@ -121,7 +121,7 @@ header a:hover{
 	background-size: cover;
 	position: relative;
 	color: white;
-	text-shadow: 2px 2px 3px #3A3B3C;
+	text-shadow: 1px 1px 3px #3A3B3C;
 }
 
 #section2 p {
@@ -142,12 +142,12 @@ header a:hover{
 
 #section4 {
 	background-image: url('../img/bg4.jpg');
-	background-position: 35% 90%;
+	background-position: 38% 90%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	color: white;
-	text-shadow: 2px 2px 3px #3A3B3C;
+	text-shadow: 1px 1px 3px #3A3B3C;
 	display: flex;
 	align-items: center;
 }
