@@ -209,7 +209,7 @@ header a, a:active, a:hover {
 	align-items: center;
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 1200px) { 
 	body {
 		border: 3.5rem solid white;
 	}
