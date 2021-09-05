@@ -158,7 +158,7 @@ header a, a:active, a:hover {
 	background-image: url('../img/bg2.jpg');
 	background-position: 50% 85%;
 	color: white;
-	min-height: 700px;
+	min-height: 800px;
 }
 
 #section2 p {
@@ -176,7 +176,8 @@ header a, a:active, a:hover {
 	text-shadow: 1px 1px 2px #3A3B3C;
 }
 
-#timer {
+#timer,
+#timerms {
 	font-size: clamp(1.5rem, 3.5vw, 5rem);
 	font-weight: 200;
 	text-shadow: 1px 1px 2px #3A3B3C;
@@ -187,12 +188,10 @@ header a, a:active, a:hover {
 	min-height: 800px;
 }
 
-.mobiletab {
-	display: inline;
-}
-
-.desktop {
-	display: none;
+.map iframe{
+	height: 25vmin;
+	width: 100%;
+	border:0;
 }
 
 #section3 h1,
@@ -211,7 +210,7 @@ header a, a:active, a:hover {
 
 @media (min-width: 1200px) { 
 	body {
-		border: 3.5rem solid white;
+		border: 3.8rem solid white;
 	}
 
 	.navbar-nav {
@@ -226,11 +225,4 @@ header a, a:active, a:hover {
 		padding-top: 5rem;
 	}
 
-	.mobiletab {
-		display: none;
-	}
-
-	.desktop {
-		display: inline;
-	}
 }
