@@ -136,8 +136,8 @@ header a, a:active, a:hover {
 	font-weight: 200;
 	text-shadow: 1px 1px 2px #181818;
 	padding-top: 2rem;
-	font-size: clamp(1rem, 2vw, 3rem);
-	line-height: clamp(1.3rem, 3vw, 4rem);
+	font-size: clamp(1rem, 3vmin, 2rem);
+	line-height: clamp(2rem, 6vmin, 4rem);
 }
 
 /* Backgrounds */
@@ -171,15 +171,15 @@ header a, a:active, a:hover {
 
 .signature {
 	font-family: 'Allison', cursive;
-	font-size: clamp(2rem, 4.5vw, 5rem);
+	font-size: clamp(2rem, 4.5vmin, 5rem);
 	font-weight: 200;
 	text-shadow: 1px 1px 2px #3A3B3C;
 }
 
 #timer,
 #timerms {
-	font-size: clamp(1rem, 2vw, 3rem);
-	line-height: clamp(1.3rem, 3vw, 4rem);
+	font-size: clamp(1rem, 2vmin, 3rem);
+	line-height: clamp(1.3rem, 3vmin, 4rem);
 	font-weight: 200;
 	text-shadow: 1px 1px 2px #3A3B3C;
 	padding-top: 1rem;
@@ -209,7 +209,7 @@ header a, a:active, a:hover {
 	align-items: center;
 }
 
-@media (min-width: 1200px) and (min-height: 900px) { 
+@media (min-width: 1200px) { 
 	body {
 		border: 3.8rem solid white;
 	}
