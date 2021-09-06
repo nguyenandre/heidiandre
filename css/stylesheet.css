@@ -136,8 +136,8 @@ header a, a:active, a:hover {
 	font-weight: 200;
 	text-shadow: 1px 1px 2px #181818;
 	padding-top: 2rem;
-	font-size: clamp(1rem, 2.3vw, 3rem);
-	line-height: clamp(1.5rem, 5vw, 5rem);
+	font-size: clamp(1rem, 2vw, 3rem);
+	line-height: clamp(1.3rem, 3vw, 4rem);
 }
 
 /* Backgrounds */
@@ -178,7 +178,8 @@ header a, a:active, a:hover {
 
 #timer,
 #timerms {
-	font-size: clamp(1.5rem, 3.5vw, 5rem);
+	font-size: clamp(1rem, 2vw, 3rem);
+	line-height: clamp(1.3rem, 3vw, 4rem);
 	font-weight: 200;
 	text-shadow: 1px 1px 2px #3A3B3C;
 	padding-top: 1rem;
